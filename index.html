@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Truhlářství Kilian</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+
+
+
+	<script>
+		window.addEventListener("scroll", function () {
+		  const header = document.querySelector("header");
+		  const scrollY = window.scrollY;
+		  const headerHeight = header.offsetHeight;
+		  
+		  if (scrollY > headerHeight) {
+			header.classList.add("sticky");
+		  } else {
+			header.classList.remove("sticky");
+		  }
+		});
+		</script>
+		
+	<!---header-->
+	<header>
+		<a href="#" class="logo">Truhlářství<span>Kilian</span></a>
+
+		<ul class="navbar">
+			<li><a href="#services">Služby</a></li>
+			<li><a href="#gallery">Galerie</a></li>
+			<li><a href="#contact">Kontakt</a></li>
+		</ul>
+
+		<div class="h-right">
+			<a href="https://www.facebook.com/people/Truhl%C3%A1%C5%99stv%C3%AD-Kilian/100076420450784/"><i class="ri-facebook-fill"></i></a>
+			
+		</div>
+	</header>
+	<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const navLinks = document.querySelectorAll("header .navbar a");
+	  
+		navLinks.forEach(link => {
+		  link.addEventListener("click", (e) => {
+			e.preventDefault();
+	  
+			const target = document.querySelector(link.getAttribute("href"));
+			if (target) {
+			  window.scrollTo({
+				top: target.offsetTop,
+				behavior: "smooth"
+			  });
+			}
+		  });
+		});
+	  });
+	</script>
+
+	<!---home-->
+	<section class="home">
+		<div class="home-text">
+			<h5>Na trhu již přes 20 let</h5>
+			<h1>Truhlářství Kilian<br></h1>
+			<p>Naší prioritou je spokojený zákazník, a proto dbáme na vysokou profesionalitu. 
+				<br>Naše dlouholeté zkušenosti v oboru Vám navíc zaručují ty nejlepší služby za nejlepší ceny.
+		</p>
+			
+		</div>
+	</section>
+
+
+	
+
+	<!----->
+	<section id="services" class="holiday">
+		<div class="holiday-img">
+			<img src="img/obrazek5.jpg">
+		</div>
+
+		<div class="holiday-text">
+			<h5>Čím se zabýváme ?</h5>
+			<h2>O nás </h2>
+			<p>  Naše firma se zabývá především výrobou dveří, schodů, postelí z masívu, ale také výroba atypického nábytku z lamina a dýhy nám není cizí. Používáme kvalitní materiály, zejména dřevo, které odebíráme od spolehlivých dodavatelů již přes patnáct let.</p>
+		</div>
+	</section>
+
+
+
+
+	<!----->
+	<section class="tour" id="gallery">
+		<div class="center-text">
+			<h2>Co všechno děláme ? </h2>
+		</div>
+		<div class="tour-content">
+
+			<!--SCHODY--->
+			<div class="box"  id="schody">
+				<img src="img/AI2.jpg">
+				<h6>Dřevěné</h6>
+				<h4>Schody</h4>
+			</div>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const schodyBlock = document.getElementById("schody");
+			
+					if (schodyBlock) {
+						schodyBlock.addEventListener("click", function () {
+							window.location.href = "schody.html";
+						});
+					}
+				});
+			</script>
+
+			<!--KUCHYNE--->
+			<div class="box" id="kuchyne" >
+				<img src="img/AI5.jpg">
+				<h6>Moderní</h6>
+				<h4>Kuchyně</h4>
+			</div>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const schodyBlock = document.getElementById("kuchyne");
+			
+					if (schodyBlock) {
+						schodyBlock.addEventListener("click", function () {
+							window.location.href = "kuchyne.html";
+						});
+					}
+				});
+			</script>
+
+			<!--DVERE--->
+			<div class="box" id="dvere">
+				<img src="img/AI6.jpg">
+				<h6>Interiérové a exteriérové</h6>
+				<h4>Dveře</h4>
+			</div>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const schodyBlock = document.getElementById("dvere");
+			
+					if (schodyBlock) {
+						schodyBlock.addEventListener("click", function () {
+							window.location.href = "dvere.html";
+						});
+					}
+				});
+			</script>
+
+			<!--OSTATNI--->
+			<div class="box" id="ostatni">
+				<img src="img/AI3.jpg">
+				<h6>Ostatní</h6>
+				<h4>Výroba</h4>
+			</div>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const schodyBlock = document.getElementById("ostatni");
+			
+					if (schodyBlock) {
+						schodyBlock.addEventListener("click", function () {
+							window.location.href = "ostatni.html";
+						});
+					}
+				});
+			</script>
+
+		</div>
+	</section>
+
+
+
+
+	<!----->
+	<section class="Culture">
+		<div class="Culture-text">
+			<h5>Mnoho žkušeností</h5>
+			<h2>Tradice</h2>
+			<p>Pokud hledáte truhlářskou firmu, která propojí tradiční řemeslo s moderním designem a přinese do Vašeho interiéru jedinečnost, jste u nás na správném místě. Jsme tu pro Vás, abychom Vaše představy proměnili v realitu z dřeva.
+</p>
+		</div>
+
+		<div class="Culture-img">
+			<img src="img/obrazek4.jpg">
+		</div>
+	</section>
+
+<!----->
+<section id="services" class="holiday">
+	<div class="holiday-img">
+		<img src="img/obrazek2.jpg">
+	</div>
+
+	<div class="holiday-text">
+		<h5>Vaše spokojenost</h5>
+		<h2>Naším cílem</h2>
+		<p>Váš spokojený úsměv je pro nás nejlepší odměnou. Každý kus, který opouští naši dílnu, nese s sebou naši pečlivou práci, vášeň a kvalitu. Chceme, aby naše výrobky nejen plnily svou funkci, ale také přinášely osobitý šarm a eleganci do vašeho prostoru.</p>
+	</div>
+</section>
+
+	<!----->
+
+	<div class="center-text" id="contact">
+		<h2>Napište nám </h2>
+		<p>Neváhejte nás kontaktovat</p>
+	</div>
+		
+	</section>
+	<body>
+		<div class="container">
+			<form method="post">
+				<!---->
+				<input type="text" placeholder="Jméno" id="name" autocomplete="off">
+				<input type="email" placeholder="E-mail" id="email" autocomplete="off">
+				<input type="text" placeholder="Předmět" id="subject" autocomplete="off">
+				<textarea placeholder="Text" id="message" cols="30" rows="10"></textarea> <!---->
+				<button class="btn" id="btn">Poslat</button>
+			</form>
+		</div>
+	
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script>
+			var btn = document.getElementById('btn');
+			btn.addEventListener('click', function (e) {
+				e.preventDefault();
+	
+			
+				var name = document.getElementById('name').value;
+				var email = document.getElementById('email').value;
+				var subject = document.getElementById('subject').value;
+				var message = document.getElementById('message').value; 
+				var body = 'name: ' + name + '<br/> email: ' + email + '<br/> subject: ' + subject + '<br/> message: ' + message;
+	
+									Email.send({
+						SecureToken : "d1f642c0-c08b-42c8-8148-211fd128f6d7",
+						To : 'r.bednar.st@spseiostrava.cz',
+						From : "radimbednys@gmail.com",
+						Subject : "Contact message",
+						Body : body
+					}).then(
+					message => alert(message)
+					);
+			})
+		</script>
+	</body>
+
+
+	<!----->
+	<section class="footer">
+		<div class="footer-box">
+			<h3>Kontakt<br><br>
+			<a href="https://www.google.com/maps/place/Lubom%C3%ADr+Kilian/@49.9310367,18.0076685,19.25z/data=!4m6!3m5!1s0x4713df574da41b9d:0xd0f4fa3c6ff6c0df!8m2!3d49.9310056!4d18.0077843!16s%2Fg%2F11bc7pw8sj?entry=ttu">Bezručova 110 Kravaře 747 21</a><br>
+			<a>IČ: 69570248</a><br>
+			<a>Tel.:+420 777 041 229</a><br>
+			<a>E-mail: lubos.kilian@seznam.cz</a>
+		</div>
